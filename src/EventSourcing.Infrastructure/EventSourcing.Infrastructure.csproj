@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Elastic.Apm.SerilogEnricher" Version="1.5.3" />
+		<PackageReference Include="EventStore.Client.Grpc.Streams" Version="21.2.0" />
+		<PackageReference Include="FluentValidationForMassTransit" Version="3.0.0" />
+		<PackageReference Include="IdGen" Version="3.0.3" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.0.13" />
+		<PackageReference Include="MassTransit.MongoDb" Version="8.0.13" />
+		<PackageReference Include="MassTransit.Kafka" Version="8.0.13" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+		<PackageReference Include="OpenTelemetry.Exporter.Jaeger" Version="1.4.0-rc.3" />
+		<PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.4.0-rc.3" />
+		<PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.4.0-rc.3" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.0.0-rc9.12" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.0.0-beta.4" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.0.0-rc9.12" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.MassTransit" Version="1.0.0-beta.3" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Process" Version="1.0.0-alpha.5" />
+		<PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.1.0-beta.4" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+		<PackageReference Include="Serilog.Enrichers.Span" Version="3.0.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+		<PackageReference Include="Serilog.Sinks.Elasticsearch" Version="8.4.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\EventSourcing.Contracts\EventSourcing.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>
